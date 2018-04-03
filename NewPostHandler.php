@@ -29,14 +29,14 @@
 	}
 	 
  }
- 
+ /*
  if(!$empty){
 	  if (!move_uploaded_file($_FILES["files"]["tmp_name"][$key], $imagePath)) {
 			throw new Exception("File move failed " . print_r($_FILES["files"]["error"]),1);
 			
 		}
  }
- 
+ */
   $dao->insertPost($title, $post);
 
   if (!empty($_FILES['files']['name'][0])){

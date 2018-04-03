@@ -2,10 +2,10 @@
 
 //require_once 'KLogger.php';
 class Dao {
-  private $host = "localhost";
-  private $db = "MeganDatabase";
-  private $user = "root";
-  private $pass = "";
+  private $host = "us-cdbr-iron-east-05.cleardb.net"; //"localhost";
+  private $db = "heroku_91a63d0f5d5bb3f"; //"MeganDatabase";
+  private $user = "bb9ed37c91e92c"; //"root";
+  private $pass = "f6fe1a54"; //"";
  // protected $logger;
  
  
@@ -169,7 +169,9 @@ class Dao {
      $results = $query->fetch();
 		 
      //$this->logger->logDebug(__FUNCTION__ . " " . print_r($results,1));
-     return $results;
+	 	  	 error_log(" GET UserID REsult: " . print_r($results,true));
+
+     return $results['ID'];
 	  
   }
   
@@ -181,7 +183,9 @@ class Dao {
      $query->setFetchMode(PDO::FETCH_ASSOC);
      $query->execute();
 	 $results = $query->fetch();
-	 return $results;
+	 	 	  	 error_log(" GET Password REsult: " . print_r($results,true));
+
+	 return $results['Password'];
   }
   
   

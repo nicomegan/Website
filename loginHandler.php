@@ -29,8 +29,15 @@
   }
   else{
 	  $ID = $dao->getUserID($username);
-	  $hash = $dao->getPassword($ID);
-	  if(!password_verify($password, $hash)){
+	  $pass = $dao->getPassword($ID);
+	  	 error_log(" UserID from Dao: " . $ID);
+	  	 error_log(" Password from Post: " . $password);
+	  	 error_log(" Password from Post: " . $password);
+		 error_log(" Password from Dao: " . $pass);
+
+
+	 // if(!password_verify($password, $hash)){
+		 if($password != $pass){
 		$messages[] = "Incorrect Password";
 		$valid = false;
 	  } else{

@@ -42,7 +42,7 @@
 	} 
   
   if (!$user){
-	$dao->newUser($rName, $username, password_hash($password));
+	$dao->newUser($rName, $username, $password);
 	$messages[] = "User $username Created";
 	$_SESSION['currentUser'] = $username;
 	$valid = true;
