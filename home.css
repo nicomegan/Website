@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: 400;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+
+/* Fake image */
+.image {
+	display: block; 
+    background-color: #aaa;
+    padding: 10px;
+	margin: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 400px;
+	max-height: 400px;
+	margin-bottom: 20px;
+	
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+.postText {
+	width: 75%;
+	height: 500px;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.login {
+	float: right;
+	width: 50%;
+	display: inline;
+	text-align: right;
+}
+
+.log{
+	font-size:10px;
+	text-decoration:none;
+
+}
+
+ .homeLink, .homeLink > *{
+	 width:50%;
+	 margin-right:0px;
+	 float: left;
+	 color: black;
+ }
+ 
+ .navTab{
+	 text-decoration:none;
+ }
+ 
+ .navTab :hover{
+    background-color: #c0cad8;
+}
+
+.headerBar {
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+</style>
+</head>

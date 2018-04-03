@@ -61,3 +61,11 @@ img{
 .navTab :hover{
     background-color:;
 }
+
+.pageTitle{
+	text-align: center;
+}
+
+.login {
+	text-align: right;
+}
